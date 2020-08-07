@@ -1,0 +1,131 @@
+.header-area{
+    width: 100%;
+    z-index: 12 ;
+    position: relative;
+    top: 0;
+    background-color: var(--light);
+    border-bottom: 1px solid #f6f6f6;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .25s ease-in-out, visibility .25s ease-in-out;
+
+}
+.header-area nav{
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    flex-direction: row;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+.header-area .nav .toggle-button{
+    margin-left: auto;
+    display: none;
+    border: 1px solid var(--light);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+.header-area .nav .toggle-button:hover{
+    color: var(--gray);
+}
+
+.navbar-nav{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 150px;
+}
+.collapse{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-nav .nav-link{
+    padding: 0 1vw;
+}
+.navbar-nav .nav-link .link:hover{
+    color: var(--primary-color);
+}
+.nav .nav-brand{
+    font: normal 700 1.1rem var(--font-mont);
+}
+
+.header-area .form-group,
+.sidebar .search-area .form-group{
+     background: var(--light);
+     box-shadow: var(--box-shadow);
+     
+ }
+ .header-area .search{
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+ .header-area .input-control,
+ .sidebar .search-area .input-control{
+     border: none;
+     padding: .6rem 1rem;
+     background: transparent;
+     font: normal 300 .9rem var(--font-Rale);
+}
+.header-area .btn.btn-submit,
+.sidebar .search-area button.btn.btn-submit{
+     border: none;
+     padding: .8rem 1rem;
+     cursor: pointer;
+     transition: background.5s ease;
+}
+.header-area  .btn.btn-submit:hover,
+.sidebar .search-area button.btn.btn-submit:hover{
+     background-color: var(--primary-color);
+}
+
+/* responsive toggle menu */
+@media(max-width: 992px){
+    .header-area .toggle-button{
+        display: block !important;
+    }
+
+    .nav{
+        flex-wrap: wrap;
+        height: 40px;
+    }
+
+    .header-area .nav .collapse,
+    .header-area .nav .navbar-nav{
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+
+    .header-area .form-group{
+        display: inline-block;
+        margin: 2% 0;
+    }
+
+    .header-area .nav-link{
+        padding: 10px 0 !important;
+    }
+
+    .header-area{
+        height: 60px ;
+        background: var(--dark);
+        transition: height .5s ease;
+        overflow-y: hidden;
+    }
+
+}
+
+.nav-collapse{
+    height: 24rem !important;
+}

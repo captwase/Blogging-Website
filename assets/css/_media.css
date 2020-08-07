@@ -1,0 +1,64 @@
+/*media for viewport 0px or greater */
+@media (min-width:0px){
+      .banner-area .banner img{
+        height: 15rem;
+    }
+
+      .categories a{
+        margin: 1rem 0;
+    }
+
+      .post-area{
+        margin: 0 5%;
+    }
+
+      .post-area .col-8-lg .grid{
+        column-count: auto;
+    }
+
+    .sidebar .latest-post .new-post .post-image{
+        width: 40%;
+    }
+
+    .footer-area > .row div{
+        padding: 5%;
+    }
+}
+
+/*media for viewport 576px or greater */
+@media (min-width: 576px){
+      .banner-area .banner img{
+        height: 20rem;
+    }
+
+    .sidebar .latest-post .new-post .post-image{
+        width: 18%;
+    }
+
+      .post-area{
+        margin: 0 10%;
+    }
+}
+
+/*media for viewport 768px or greater */
+@media (min-width: 768px){
+      .post-area .col-8-lg .grid{
+        column-count: 2;
+    }
+
+      .banner-area .banner img{
+        height: 28rem;
+    }
+}
+
+/*media for viewport 1200px or greater */
+@media (min-width: 1200px){
+      .banner-area .banner img{
+        height: auto;
+    }    
+
+    .sidebar .latest-post .new-post .post-image img{
+        width: 88%;
+    }
+
+}
